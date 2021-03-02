@@ -1,0 +1,154 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191D28;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 40px 0 40px 0;
+}
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.navbar__left>h1{
+    color: #49C3BE;
+}
+.navbar__left>h1>span {
+    color: #D2D3D5;
+    font-size: 20px;
+}
+
+.navbar__left>h5 {
+    color: #7d8499;
+    margin-top: 10px;
+}
+.navbar__left>h5>span{
+color: #49C3BE;
+}
+.navbar__middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+}
+.navbar__middle__input__menu{
+   
+    background: #2E3241;
+    color: #D2D3D5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius:8px ;
+    padding: 5px 8px 5px 10px;
+    position: relative;
+}
+.navbar__middle__input__menu__lists{
+    position: absolute;
+    background-color:#2E3241;
+    top: 32px;
+    width: 70px;
+
+
+}
+.navbar__middle__input__menu__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0 6px 0;
+}
+.navbar__middle__input__menu__list:hover{
+background: #4e556e;
+}
+.navbar__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 288px;
+    margin-right: 80px;
+}
+.pointsButton{
+    border: none;
+    outline: none;
+    border:4px solid #4AC6C1;
+    border-radius: 50%;
+    background: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #4AC6C1;
+    font-size: 18px;
+
+}
+.contactButton{
+    border: none;
+    outline: none;
+    background:#4AC6C1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 8px;
+    padding: 9px 15px 9px 15px;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.contactButton:active {
+ 
+    background: #53e2dd;
+   
+
+}
+.contactButton>span{
+    margin-left: 5px;
+}
+
+
+.switch{
+   
+    position: relative;
+    transform: translate(0,-20px);
+}
+
+.switch>input[type="checkbox"]{
+     position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+    background:#2E3241;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    transition: .5s;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    
+
+}
+.switch>input:checked[type="checkbox"]{
+    background:#2E3241;
+
+}
+
+.switch>input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background:#4AC6C1;
+    transform: scale(0.9);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+.switch>input:checked[type="checkbox"]::before {
+    left: 40px;
+}
